@@ -1,0 +1,13 @@
+Es un Arbol Binario
+
+-raiz
+-maximo dos hijos por nodo
+- no tiene ciclos
+-los caminos hacia nodos osn unicos
+
+
+Uso:
+
+Contestar preguntas sobre el rango del input.
+
+Ejemplo: sumatoria de [0]->[3].

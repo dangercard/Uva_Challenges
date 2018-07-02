@@ -1,0 +1,39 @@
+unsigned int N,L,U ;
+
+cin >> N ;
+cin >> L >> U ;
+
+unsigned int tmp = N;
+
+int ctr = 0;
+
+// Calcular log base 2 de N.
+while (tmp != 1)
+{
+  ctr++;
+  tmp = tmp>>1;
+}
+
+unsigned int M = 0 ;
+unsigned int mask = 1 << ctr ;
+
+while(mask)
+{
+  if(N & mask)
+  {
+    if((M | mask) - 1 < L)
+    {
+      M = M | mask ;
+    }
+  }
+
+  else
+  {
+    if(M | mask <= U)
+    {
+      M = M | mask ;
+    }
+  }
+
+  mask = mask >> 1 ;
+}

@@ -1,0 +1,21 @@
+for(i = 0; i < (1 << N); i++)
+{
+cout << "{"
+tmp = i;
+ctr = 1;
+while(tmp!=0)
+{
+  if(tmp & 1)
+  {
+    ctr++; tmp = tmp >> 1;
+  }
+}
+cout << "}"
+}
+
+
+ej de fracc. uva 10976.
+
+x = yk/y-k (si da entero, osea el mod da 0, es una solucion.)
+
+usamos y desde k+1 hasta 2k
